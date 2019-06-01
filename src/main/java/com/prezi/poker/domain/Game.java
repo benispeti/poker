@@ -2,10 +2,15 @@ package com.prezi.poker.domain;
 
 import lombok.Data;
 
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Data
+@Entity
 public class Game {
-    Deck deck;
-    List<Player> players;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 }
