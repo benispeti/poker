@@ -360,6 +360,79 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Game Player",
+			"item": [
+				{
+					"name": "Add Player to Game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/game/1/player/1",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"game",
+								"1",
+								"player",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Player From Game",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{host}}/api/v1/game/1/player/1",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"game",
+								"1",
+								"player",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
@@ -386,7 +459,7 @@
 	],
 	"variable": [
 		{
-			"id": "bbc9fbe6-d88b-47b1-9328-0f9e4b470d89",
+			"id": "0af99fc6-e915-42d3-8e13-5b0d4d4b6f56",
 			"key": "host",
 			"value": "localhost:8080",
 			"type": "string"
