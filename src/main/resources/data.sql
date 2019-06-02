@@ -28,6 +28,7 @@ CREATE TABLE deck_card (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   deck_id INT,
   card_id INT,
+  index INT,
   FOREIGN KEY (deck_id) REFERENCES deck (id),
   FOREIGN KEY (card_id) REFERENCES card (id)
 );
