@@ -33,7 +33,7 @@ CREATE TABLE deck_card (
 );
 
 DROP TABLE IF EXISTS `game_player_card`;
-CREATE TABLE game_player (
+CREATE TABLE game_player_card (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   game_id INT,
   player_id INT,
